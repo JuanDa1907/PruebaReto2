@@ -1,22 +1,99 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <title>API HTML</title>
-    <link rel="icon" href="https://cdn.sstatic.net/Sites/es/img/apple-touch-icon.png?v=7739871010e6">
-</head>
-<body>
-    <div id="informacion"></div>
-    <form>
-    <div id="informacion"></div>
-    <button id="ver">Ver</button>
-    <button id="guardar">Guardar</button>
-    <button id="actualizar">Actualizar</button>
-    <button id="eliminar">Eliminar</button>
-    </form>
-    <script src="script.js"></script>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <title>AUDITORIOS MINTIC</title>
+        <link rel="icon" href="https://cdn.sstatic.net/Sites/es/img/apple-touch-icon.png?v=7739871010e6"/>
+    </head>
+        
+    <!--  -->
+
+    <body>
+
+        <h1 align=center> BIENVENIDO A LA RESERVA DE AUDITORIOS</h1>
+        
+        <!-- CREACION DE LA TABLA  -->
+        <center>
+        <table border width="70%">            
+        <!-- FORMULARIO AUDITORIOS -->
+        <td width=30%>
+            <form>
+                <div style="text-align: center;">
+                    <center>
+                        <h2> Administrar Auditorios </hd>
+                        <br>
+                        <input type="number" id="id" placeholder="ID"><br>
+                        <input type="text" id="owner" placeholder="Owner"><br>
+                        <input type="number" id="capacity" placeholder="Capacity"><br>
+                        <input type="number" id="category" placeholder="Category_ID"><br>
+                        <input type="text" id="nombrea" placeholder="Name">
+                        <br>
+                        <button id="bMostrar">Mostrar</button>
+                        <button id="bGuardar">Guardar</button><br>
+                        <button id="bActualizar">Actualizar</button>
+                        <button id="bEliminar">Eliminar</button>
+                    </center> 
+            </div>
+            </form>
+        </td>
+        <!-- FORMULARIO CLIENTES -->
+        <td width=30%>
+            <form>
+                <div style="text-align: center;">
+                    <center>
+                        <h2> Administrar Clientes </hd>
+                        <br>
+                        <input type="number" id="id_client" placeholder="ID"><br>
+                        <input type="text" id="name_client" placeholder="Name"><br>
+                        <input type="email" id="email_client" placeholder="Email"><br>
+                        <input type="number" id="age_client" placeholder="Age"><br>
+                        
+                        <br>
+                        <button id="mostrar_c">Mostrar</button>
+                        <button id="guardar_c">Guardar</button><br>
+                        <button id="actualizar_c">Actualizar</button>
+                        <button id="eliminar_c">Eliminar</button>
+                    </center> 
+            </div>
+            </form>
+        </td> 
+        <!-- FORMULARIO MENSAJES -->
+        <td width=30%>
+            <form>
+                <div style="text-align: center;">
+                    <center>
+                        <h2> Administrar Mensajes </hd>
+                        <br><br>
+                        <input type="number" id="id_msg" placeholder="ID"><br><br>
+                        <textarea id="msg" placeholder="Tu mensaje Aqui!"></textarea>
+                        
+                        <br>
+                        <button id="mostrar_msg">Mostrar</button>
+                        <button id="guardar_msg">Guardar</button><br>
+                        <button id="actualizar_msg">Actualizar</button>
+                        <button id="eliminar_msg">Eliminar</button>
+                    </center> 
+                </div>
+            </form>
+        </td>
+
+        <tr>
+            <td id="info_auditorios" style="text-align: center;">
+                
+            </td>
+
+            <td id="info_clientes" style="text-align: center;">
+            </td>
+
+            <td id="info_messages" style="text-align: center;">
+            </td>
+        </tr>
+
+        
+        <script src="script.js"></script>
+
+        </body>
 </html>
